@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #slider {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            background-color: black;
+            left: -300px;
+            transition: 0.5s;
+        }
+
+        #slider.active {
+            left: 0;
+        }
+
+        #slider ul li {
+            list-style: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px 2px;
+        }
+
+        #slider .toggle-btn {
+            position: absolute;
+            top: 30px;
+            left: 330px;
+        }
+
+        .toggle-btn span {
+            width: 45px;
+            height: 4px;
+            background-color: #000;
+            display: block;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+            <li>Home</li>
+            <li>Work</li>
+            <li>Service</li>
+            <li>About</li>
+        </ul>
+    </div>
+
+    <script>
+        function show() {
+            document.getElementById("slider").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

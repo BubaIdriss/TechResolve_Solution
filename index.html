@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Media/No-bg.png">
+    <link rel="stylesheet" type="text/css" href="static/mobileDeviceStyle.css">
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <!-- Add a separate stylesheet for your custom styles -->
+    <title>TechResolve | Solution</title>
+    <style>
+        .content {
+            text-align: left;
+            margin: 10px;
+            padding: 7px;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <video class="background-video" autoplay loop muted>
+                <source
+                    src="https://res.cloudinary.com/dz3puunwv/video/upload/v1701929035/static/background_clip_nfifqk.mp4"
+                    type="video/mp4">
+            </video>
+
+            <nav id="nav">
+                <div class="toggle-btn" onclick="show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <img src="Media/logo0.png" class="logo" alt="TechResolve Logo">
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <h2>Welcome to</h2>
+                <h2 class="welcome"><span id="element"></span></h2>
+            </div>
+        </div>
+
+        <div class="context">
+            <p>
+                At TechResolve Solution, our mission is to empower businesses and organizations through cutting-edge
+                technology solutions. We specialize in crafting websites, web apps, and captivating graphic designs.
+            </p>
+
+            <p>
+                Committed to excellence, we also provide efficient school management systems, store management
+                solutions, and a diverse range of services to meet all our client's digital needs.
+            </p>
+
+            <p>
+                TechResolve Solution envisions a digital landscape where innovation knows no bounds. We aspire to be the
+                go-to partner for businesses seeking transformative web solutions, graphic excellence, and streamlined
+                management systems.
+            </p>
+
+            <p>
+                With a commitment to constant evolution, we strive to lead the industry, leaving an
+                indelible mark by fostering creativity, efficiency, and technological advancement.
+            </p>
+        </div>
+        <br><br>
+        <div class="services">
+            <h2 style="margin-left: 25px;">Why Choose TechResolve Solution</h2>
+            <div class="context">
+                <h3>Innovation Meets Expertise</h3>
+                <p>
+                    Our team of skilled professionals combines innovative thinking with technical expertise to deliver
+                    solutions that stand out in the digital landscape.
+                </p>
+                <br>
+                <h3>Tailored Solutions for Every Need</h3>
+                <p>
+                    We understand that one size doesn't fit all. Our solutions are tailored to meet the specific
+                    requirements and goals of your business.
+                </p>
+                <br>
+                <h3>Reliability and Security</h3>
+                <p>
+                    Your digital assets are valuable. TechResolve Solution prioritizes reliability and security to
+                    ensure your online presence is robust and protected.
+                </p>
+                <br>
+                <h3>Client-Centric Approach</h3>
+                <p>
+                    We believe in building lasting partnerships. Our client-centric approach ensures that your
+                    satisfaction is at the forefront of every project.
+                </p>
+            </div>
+        </div>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="Media/IMG_20220624_164521.jpg" alt="Abubakar Idris Buba">
+                <div class="member-name">Abubakar Idris Buba</div>
+                <div class="member-title">Chief Executive Officer</div>
+            </div>
+
+            <div class="team-member">
+                <img src="Media/ibi.jpg" alt="Esv Idris Buba Idris">
+                <div class="member-name">Esv Idris Buba Idris</div>
+                <div class="member-title">Chief Financial Officer</div>
+            </div>
+
+            <div class="team-member">
+                <img src="Media/mah.jpg" alt="Esv Idris Buba Idris">
+                <div class="member-name">Maryam Ado Haruna</div>
+                <div class="member-title">Chief Operating Officer</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="#">Back to Top</a>
+                <a href="#">About Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="staticWebsite.html">Static Website</a>
+                        <a href="dynamicWebsite.html">Dynamic Website</a>
+                        <a href="graphicDesign.html">Graphic Design</a>
+                        <a href="typing.html">Typing</a>
+                        <a href="projectResearch.html">Project Research</a>
+                        <a href="dataAnalysis.html">Data Analysis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Contact Us</button>
+            </div>
+
+            <p>&copy; 2023 TechResolve Solution. All rights reserved.</p>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['TechResolve', ' <i>Solution</i>'],
+                typeSpeed: 130,
+            });
+
+            function show() {
+                document.getElementById("nav").classList.toggle("active");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
