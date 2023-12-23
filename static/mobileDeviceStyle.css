@@ -96,7 +96,7 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: inline-block;
+        display: block;
     }
 
     .team-member {
@@ -111,9 +111,8 @@
     }
 
     .member-name {
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 10px;
-        padding: 8px;
     }
 
     .member-title {
