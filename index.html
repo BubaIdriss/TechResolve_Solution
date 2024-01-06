@@ -27,7 +27,18 @@
             font-size: 18px;
             margin-top: 10px;
             padding: 10px;
+        }
 
+        .scroll-indicator {
+            font-size: 2em;
+            color: #333;
+            /* Adjust the color to your preference */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scroll-indicator:hover {
+            transform: translateY(5px);
         }
     </style>
 </head>
@@ -65,8 +76,9 @@
                 <h2>Welcome to</h2>
                 <h2 class="welcome"><span id="element"></span></h2>
             </div>
+            <div class="scroll-indicator">&#9660;</div>
         </div>
-
+        
         <div class="context">
             <p>
                 At TechResolve Solution, our mission is to empower businesses and organizations through cutting-edge
