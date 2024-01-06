@@ -307,7 +307,7 @@ footer {
     /* Adjust the color to your preference */
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    margin-top: 95%;
+    margin-top: 30%;
 }
 
 .scroll-indicator:hover {
