@@ -121,4 +121,17 @@
         margin-top: 5px;
     }
 
+        .scroll-indicator {
+            font-size: 2em;
+            color: #ffffff;
+            /* Adjust the color to your preference */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 95%;
+        }
+
+        .scroll-indicator:hover {
+            transform: translateY(5px);
+        }
+
 }
